@@ -1,50 +1,51 @@
-# Release Notes
+# Notas da versão
 
-- [Versioning Scheme](#versioning-scheme)
-    - [Exceptions](#exceptions)
-- [Support Policy](#support-policy)
+- [Esquema da versão](#versioning-scheme)
+    - [Exceções](#exceptions)
+        - [Argumentos nomeados](#named-arguments)
+- [Política de suporte](#support-policy)
 - [Laravel 8](#laravel-8)
 
 <a name="versioning-scheme"></a>
-## Versioning Scheme
+## Esquema da versão
 
-Laravel and its other first-party packages follow [Semantic Versioning](https://semver.org). Major framework releases are released every year (~February), while minor and patch releases may be released as often as every week. Minor and patch releases should **never** contain breaking changes.
+O Laravel e seus outros pacotes originais seguem o [Versionamento semântico](https://semver.org). Os principais lançamentos do framework são lançados todos os anos (~Fevereiro), enquanto versões secundárias e de patch podem ser lançadas toda semana. Versões secundárias e de patch **nunca** devem conter alterações importantes.
 
-When referencing the Laravel framework or its components from your application or package, you should always use a version constraint such as `^8.0`, since major releases of Laravel do include breaking changes. However, we strive to always ensure you may update to a new major release in one day or less.
+Ao referenciar o framework Laravel ou seus componentes de seu aplicativo ou pacote, você deve sempre usar uma restrição de versão como `^8.0`, já que os principais lançamentos do Laravel incluem alterações importantes. No entanto, nos esforçamos para sempre garantir que você possa atualizar para uma nova versão principal em um dia ou menos.
 
 <a name="exceptions"></a>
-### Exceptions
+### Exceções
 
 <a name="named-arguments"></a>
-#### Named Arguments
+#### Argumentos nomeados
 
-At this time, PHP's [named arguments](https://www.php.net/manual/en/functions.arguments.php#functions.named-arguments) functionality are not covered by Laravel's backwards compatibility guidelines. We may choose to rename function parameters when necessary in order to improve the Laravel codebase. Therefore, using named arguments when calling Laravel methods should be done cautiously and with the understanding that the parameter names may change in the future.
+Neste momento, a funcionalidade [argumentos nomeados](https://www.php.net/manual/en/functions.arguments.php#functions.named-arguments) do PHP não é coberta pelas diretrizes de compatibilidade com versões anteriores do Laravel. Podemos optar por renomear os parâmetros da função quando necessário para melhorar a base de código do Laravel. Portanto, usar argumentos nomeados ao chamar métodos Laravel deve ser feito com cautela e com o entendimento de que os nomes dos parâmetros podem mudar no futuro.
 
 <a name="support-policy"></a>
-## Support Policy
+## Política de suporte
 
-For all Laravel releases, bug fixes are provided for 18 months and security fixes are provided for 2 years. For all additional libraries, including Lumen, only the latest major release receives bug fixes. In addition, please review the database versions [supported by Laravel](/docs/{{version}}/database#introduction).
+Para todas as versões do Laravel, correções de bugs são fornecidas por 18 meses e correções de segurança são fornecidas por 2 anos. Para todas as bibliotecas adicionais, incluindo Lumen, apenas a versão principal mais recente recebe correções de bugs. Além disso, por favor, revise as [versões de banco de dados suportadas pelo Laravel](/docs/{{version}}/database#introduction).
 
-| Version | PHP (*) | Release | Bug Fixes Until | Security Fixes Until |
+| Versão | PHP (*) | Lançamento | Correções de bugs até | Correções de segurança até |
 | --- | --- | --- | --- | --- |
-| 6 (LTS) | 7.2 - 8.0 | September 3rd, 2019 | January 25th, 2022 | September 6th, 2022 |
-| 7 | 7.2 - 8.0 | March 3rd, 2020 | October 6th, 2020 | March 3rd, 2021 |
-| 8 | 7.3 - 8.1 | September 8th, 2020 | July 26th, 2022 | January 24th, 2023 |
-| 9 | 8.0 - 8.1 | February 8th, 2022 | August 8th, 2023 | February 6th, 2024 |
-| 10 | 8.1 | February 7th, 2023 | August 6th, 2024 | February 4th, 2025 |
+| 6 (LTS) | 7.2 - 8.0 | 3 de setembro de 2019 | 25 de janeiro de 2022 | 6 de setembro de 2022 |
+| 7 | 7.2 - 8.0 | 3 de março de 2020 | 6 de outubro de 2020 | 3 de março de 2021 |
+| 8 | 7.3 - 8.1 | 8 de setembro de 2020 | 26 de julho de 2022 | 24 de janeiro de 2023 |
+| 9 | 8.0 - 8.1 | 8 de fevereiro de 2022 | 8 de agosto de 2023 | 6 de fevereiro de 2024 |
+| 10 | 8.1 | 7 de fevereiro de 2023 | 6 de agosto de 2024 | 4 de fevereiro de 2025 |
 
 <div class="version-colors">
     <div class="end-of-life">
         <div class="color-box"></div>
-        <div>End of life</div>
+        <div>Fim da vida</div>
     </div>
     <div class="security-fixes">
         <div class="color-box"></div>
-        <div>Security fixes only</div>
+        <div>Apenas correções de segurança</div>
     </div>
 </div>
 
-(*) Supported PHP versions
+(*) Versões do PHP suportadas
 
 <a name="laravel-8"></a>
 ## Laravel 8
